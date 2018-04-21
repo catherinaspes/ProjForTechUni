@@ -13,6 +13,10 @@ public class SampleList {
         return sampleList.get(index);
     }
 
+    public int size(){
+        return sampleList.size();
+    }
+
     @Override
     public String toString() {
 

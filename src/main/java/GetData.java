@@ -38,5 +38,8 @@ public class GetData  {
             e.printStackTrace();
         }
 
+        CreatePlot create = new CreatePlot("Wykres testowy");
+        create.drawPlot(sampleList);
+
     }
 }
