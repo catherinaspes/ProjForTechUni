@@ -14,5 +14,7 @@
     <orderEntry type="library" name="java" level="project" />
     <orderEntry type="library" name="Maven: jfree:jfreechart:1.0.13" level="project" />
     <orderEntry type="library" name="Maven: jfree:jcommon:1.0.16" level="project" />
+    <orderEntry type="library" name="Maven: com.googlecode.jfilechooser-bookmarks:jfilechooser-bookmarks:0.1.0" level="project" />
+    <orderEntry type="library" name="filechooser-1.3" level="project" />
   </component>
 </module>

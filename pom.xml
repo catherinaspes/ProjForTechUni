@@ -15,6 +15,13 @@
         <artifactId>jfreechart</artifactId>
         <version>1.0.13</version>
     </dependency>
+        <!-- https://mvnrepository.com/artifact/com.googlecode.jfilechooser-bookmarks/jfilechooser-bookmarks -->
+        <dependency>
+            <groupId>com.googlecode.jfilechooser-bookmarks</groupId>
+            <artifactId>jfilechooser-bookmarks</artifactId>
+            <version>0.1.0</version>
+        </dependency>
+
     </dependencies>
 
 
