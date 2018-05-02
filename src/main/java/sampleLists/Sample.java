@@ -1,3 +1,5 @@
+package sampleLists;
+
 public class Sample {
 
     private Double temperature;
@@ -17,7 +19,7 @@ public class Sample {
     }
 
     public void setTemperature(Double temperature) {
-        this.temperature = temperature;
+        this.temperature = temperature+273;
     }
 
     public Double getTime() {
@@ -46,7 +48,7 @@ public class Sample {
 
     @Override
     public String toString() {
-        return "Sample{" +
+        return "sampleLists.Sample{" +
                 "temperature=" + temperature +
                 ", time=" + time +
                 ", dsc=" + dsc +
