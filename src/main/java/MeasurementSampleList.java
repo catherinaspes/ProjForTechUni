@@ -1,9 +1,9 @@
-package sampleLists;
+
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MeasurementSampleList implements SampleList{
+public class MeasurementSampleList implements SampleList {
 
     List<Sample> measaurementSampleList = new ArrayList<Sample>();
 
@@ -21,7 +21,7 @@ public class MeasurementSampleList implements SampleList{
     @Override
     public String toString() {
 
-        return "sampleLists.SampleList{" +
+        return "SampleList{" +
                 "sampleList=" + measaurementSampleList +
                 '}';
     }

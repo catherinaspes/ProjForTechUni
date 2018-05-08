@@ -5,7 +5,7 @@ import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.data.xy.XYSeries;
 import org.jfree.data.xy.XYSeriesCollection;
 import org.jfree.ui.ApplicationFrame;
-import sampleLists.SampleList;
+
 
 import java.io.File;
 import java.io.IOException;
@@ -73,10 +73,10 @@ public class CreatePlot extends ApplicationFrame {
         return this.title;
     }
 
-     void drawPlot(SampleList sampleList){
+     void drawPlot(DataFromFiles dataFromFiles){
         XYSeries series = new XYSeries("wykres");
-        for (int i = 0; i<sampleList.size(); i++){
-            series.add(sampleList.getSample(i).getTime(),sampleList.getSample(i).getTemperature() );
+        for (int i = 0; i<dataFromFiles.getProcessedSamples().size(); i++){
+            series.add(dataFromFiles.getProcessedSamples().get(i).getTemp(),dataFromFiles.getProcessedSamples().get(i).getKodT() );
         }
         XYSeriesCollection dataset = new XYSeriesCollection();
         dataset.addSeries(series);

@@ -1,4 +1,3 @@
-package sampleLists;
 
 public class Sample {
 
@@ -48,7 +47,7 @@ public class Sample {
 
     @Override
     public String toString() {
-        return "sampleLists.Sample{" +
+        return "Sample{" +
                 "temperature=" + temperature +
                 ", time=" + time +
                 ", dsc=" + dsc +

@@ -1,6 +1,3 @@
-import sampleLists.Sample;
-import sampleLists.SampleList;
-import sampleLists.ZerolineSampleList;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -95,7 +92,7 @@ public class GetData extends JFrame implements ActionListener{
         }
 
         CreatePlot create = new CreatePlot("Wykres 1");
-        create.drawPlot(sampleList);
+     //   create.drawPlot(sampleList);
 
     }
 

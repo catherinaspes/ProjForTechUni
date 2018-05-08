@@ -1,21 +1,16 @@
-import sampleLists.*;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
 
 public class TestApp {
 
-    public static void main(String[] args) throws IOException {
+   /* public static void main(String[] args) throws IOException {
 
 
-        SampleList zerolineSampleList = new ZerolineSampleList();
-        SampleList measurementSampleList = new MeasurementSampleList();
-        SampleList calibrationSampleList = new CalibrationSampleList();
-
-
+        ZerolineSampleList zerolineSampleList = new ZerolineSampleList();
+        MeasurementSampleList measurementSampleList = new MeasurementSampleList();
+        CalibrationSampleList calibrationSampleList = new CalibrationSampleList();
 
 
         String zerolineFilePath = "C:\\Users\\Kasia\\Desktop\\Zeroline_ZLGd-6-1400_01_R1.txt";
@@ -109,9 +104,27 @@ public class TestApp {
         }
 
         System.out.println("Plik calibration załadowany pomyślnie");
+        DataFromFiles dff = new DataFromFiles();
+        dff.setCalibrationSampleList(calibrationSampleList);
+        dff.setMeasurementSampleList(measurementSampleList);
+        dff.setZerolineSampleList(zerolineSampleList);
+
+        ProcessedSample ps = new ProcessedSample();
+        KFunction kf = new KFunction();
+                for(int i = 0; i<calibrationSampleList.size(); i++) {
+
+                    kf.process(calibrationSampleList.getSample(i).getTemperature(),
+                            calibrationSampleList.getSample(i), zerolineSampleList.getSample(i));
+
+                    dff.processedSamples.add(ps);
+                    System.out.println(dff.processedSamples.get(i).getTemp() + " " + dff.processedSamples.get(i).getKodT());
+                }
 
 
-    }
+               CreatePlot cp = new CreatePlot("Tytuł"); */
+
+
+
 
 
 

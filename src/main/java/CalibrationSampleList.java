@@ -1,4 +1,4 @@
-package sampleLists;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +21,7 @@ public class CalibrationSampleList implements SampleList {
     @Override
     public String toString() {
 
-        return "sampleLists.SampleList{" +
+        return "SampleList{" +
                 "sampleList=" + calibrationSampleList +
                 '}';
     }

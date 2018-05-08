@@ -1,9 +1,9 @@
-package saphire;
+
 
 public class SaphireKFunction {
 
     double cp;
-    double beta;
+    double beta = new ConstValues().getBeta();
     double term1;
     double term2;
 
@@ -46,8 +46,8 @@ public class SaphireKFunction {
 
     double computeSaphireKFunction(double temp){
 
-        SaphireCp sf = new SaphireCp();
-       // ConstValues cv = new ConstValues();
+        SaphireCp sf = new SaphireCp(temp);
+        ConstValues cv = new ConstValues();
 
         cp = sf.cpOdJprzezmgK(temp);
 

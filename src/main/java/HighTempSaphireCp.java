@@ -1,6 +1,4 @@
-package saphire;
 
-import saphire.SaphireCp;
 
 public class HighTempSaphireCp{
 

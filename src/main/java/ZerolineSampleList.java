@@ -1,9 +1,11 @@
-package sampleLists;
+
+
+
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class ZerolineSampleList implements SampleList{
+public class ZerolineSampleList implements SampleList {
     List<Sample> zerolineSamplelist = new ArrayList<Sample>();
 
     public void addSample(Sample sample) {
@@ -20,7 +22,7 @@ public class ZerolineSampleList implements SampleList{
     @Override
     public String toString() {
 
-        return "sampleLists.SampleList{" +
+        return "SampleList{" +
                 "sampleList=" + zerolineSamplelist +
                 '}';
     }

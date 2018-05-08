@@ -1,7 +1,4 @@
-package saphire;
 
-import com.sun.org.apache.xerces.internal.impl.xpath.regex.Match;
-import saphire.SaphireCp;
 
 public class LowTempSaphireCp {
 
